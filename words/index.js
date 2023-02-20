@@ -1,3 +1,5 @@
+var words;
+
 fetch('https://mliybs.github.io/words/words.json')
     .then(res => {
         console.log(res);
