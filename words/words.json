@@ -1,22 +1,22 @@
 {
-    "cat": [
+    "root":[
         {
+            "name": "cat",
             "Macro": [
                 {
                     "Mean": "猫",
                     "PoS": "名词",
                     "Sp": {
-                        "Count": [
-                            "可数名词",
+                        "Countable": [
+                            true,
                             "cats"
                         ]
                     }
                 }
             ]
-        }
-    ],
-    "do": [
+        },
         {
+            "name": "do",
             "Macro": [
                 {
                     "Mean": "做",
@@ -27,6 +27,58 @@
                             "Past-Tense": "did",
                             "Past-Participle": "done"
                         }
+                    }
+                },
+                {
+                    "Mean": "无意义",
+                    "PoS": "助动词",
+                    "Sp": {
+                        "Inflect": {
+                            "Third-Singular": "does",
+                            "Past-Tense": "did",
+                            "Past-Participle": "done"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "get",
+            "Macro": [
+                {
+                    "Mean": "得到",
+                    "PoS": "动词",
+                    "Sp": {
+                        "Inflect": {
+                            "Third-Singular": "gets",
+                            "Past-Tense": "got",
+                            "Past-Participle": "got/gotten"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "table",
+            "Macro": [
+                {
+                    "Mean": "桌子",
+                    "PoS": "名词",
+                    "Sp": {
+                        "Countable": [
+                            true,
+                            "tables"
+                        ]
+                    }
+                },
+                {
+                    "Mean": "表格",
+                    "PoS": "名词",
+                    "Sp": {
+                        "Countable": [
+                            true,
+                            "tables"
+                        ]
                     }
                 }
             ]
