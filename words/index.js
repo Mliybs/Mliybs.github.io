@@ -10,4 +10,5 @@ const words = fetch('https://mliybs.github.io/words/words.json')
         console.log(err);
     })
 
+console.log(typeof(words))
 console.log(words);
