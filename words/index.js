@@ -1,10 +1,11 @@
-const words = fetch('https://mliybs.github.io/words/words.json')
+fetch('https://mliybs.github.io/words/words.json')
     .then(res => {
         console.log(res);
-        return res.json();
+        words = res.json();
+        return words;
     })
     .catch(err => {
         console.log(err);
     })
 
-setTimeout(console.log(words),4000)
+setTimeout(console.log(words), 3000);
