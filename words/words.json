@@ -1,3 +1,35 @@
 {
-    "ouo": "NMSL"
+    "cat": [
+        {
+            "Macro": [
+                {
+                    "Mean": "猫",
+                    "PoS": "名词",
+                    "Sp": {
+                        "Count": [
+                            "可数名词",
+                            "cats"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "do": [
+        {
+            "Macro": [
+                {
+                    "Mean": "做",
+                    "PoS": "动词",
+                    "Sp": {
+                        "Inflect": {
+                            "Third-Singular": "does",
+                            "Past-Tense": "did",
+                            "Past-Participle": "done"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
 }
