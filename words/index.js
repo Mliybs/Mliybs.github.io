@@ -1,16 +1,4 @@
-var words;
+import words from './words.json'
 
-oprate = (callback) => {
-    console.log(callback);
-}
-
-fetch('https://mliybs.github.io/words/words.json')
-    .then(res => {
-        console.log(res);
-        words = res.json();
-        return words;
-    })
-    .then(res => oprate(res))
-    .catch(err => {
-        console.log(err);
-    })
+console.log(words);
+console.log(typeof(words));

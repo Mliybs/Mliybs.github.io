@@ -65,21 +65,42 @@
                     "Mean": "桌子",
                     "PoS": "名词",
                     "Sp": {
-                        "Countable": [
-                            true,
-                            "tables"
-                        ]
+                        "Inflect": {
+                            "Countable": [
+                                true,
+                                "tables"
+                            ]
+                        }
                     }
                 },
                 {
                     "Mean": "表格",
                     "PoS": "名词",
                     "Sp": {
-                        "Countable": [
-                            true,
-                            "tables"
-                        ]
+                        "Inflect": {
+                            "Countable": [
+                                true,
+                                "tables"
+                            ]
+                        }
                     }
+                }
+            ]
+        }
+    ],
+    "extra": [
+        {
+            "Annotation": [
+                {
+                    "Macro": "宏数组，数组内以一个单独的意思-词性组作为一个元素，不同意思或不同词性则分布在不同的元素里",
+                    "Macro-Mean": "宏属性，指示该元素内该词的意思",
+                    "Macro-PoS": "宏属性，指示该元素内该词的词性",
+                    "Macro-Sp": "宏属性，指示该元素内该词的特殊内容",
+                    "Macro-Sp-Inflect": "子属性，指示该元素内该词的屈折变化",
+                    "Macro-Sp-Inflect-Countable": "名词子数组，指示该元素内该名词是否可数，首个元素为布尔值，若为true，则有第二个元素且为该名词的复数形式",
+                    "Macro-Sp-Inflect-Third-Singular": "动词子属性，指示该元素内该动词的第三人称单数形式",
+                    "Macro-Sp-Inflect-Past-Tense": "动词子属性，指示该元素内该动词的过去时形式",
+                    "Macro-Sp-Inflect-Past-Participle": "动词子属性，指示该元素内该动词的过去分词形式"
                 }
             ]
         }
