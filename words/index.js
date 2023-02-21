@@ -1,6 +1,6 @@
 var words;
 
-fetch('https://mliybs.github.io/words/words.js')
+fetch('https://mliybs.github.io/words/words.json')
     .then(res => {
         return res.json();
     })
