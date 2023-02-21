@@ -10,7 +10,7 @@ fetch('https://mliybs.github.io/words/words.json')
         words = res.json();
         return words;
     })
-    .then(oprate(res))
+    .then(res => oprate(res))
     .catch(err => {
         console.log(err);
     })
