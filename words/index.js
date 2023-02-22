@@ -24,6 +24,4 @@ getinlearn = () => {
     alert('冲刺！');
 }
 
-learn.onclick = () => {
-    getinlearn;
-}
+learn.onclick = getinlearn;
