@@ -6,9 +6,14 @@ fetch('https://mliybs.github.io/words/words.json')
     })
     .then(get => {
         words = get;
-        console.log(words);
-        console.log(typeof(words));
+        oprate(words);
     })
     .catch(err => {
         console.log(err);
+        alert('泥嚎，获取JSON文件失败了，刷个新好不好');
     })
+
+oprate = (input) => {
+    console.log(input);
+    console.log(typeof(input));
+}
