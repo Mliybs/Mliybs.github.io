@@ -1,3 +1,5 @@
+const learn = document.querySelector('.learn');
+
 var words;
 
 fetch('https://mliybs.github.io/words/words.json')
@@ -16,4 +18,12 @@ fetch('https://mliybs.github.io/words/words.json')
 oprate = (input) => {
     console.log(input);
     console.log(typeof(input));
+}
+
+getinlearn = () => {
+    alert('冲刺！');
+}
+
+learn.onclick = () => {
+    getinlearn;
 }
