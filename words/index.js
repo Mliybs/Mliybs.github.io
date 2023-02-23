@@ -1,3 +1,4 @@
+const macro = document.querySelector('.macro');
 const learn = document.querySelector('.learn');
 
 var words;
@@ -16,12 +17,15 @@ fetch('https://mliybs.github.io/words/words.json')
     })
 
 oprate = (input) => {
-    console.log(input);
-    console.log(typeof(input));
+    // 对获取到的JSON文件进行更改
+    delete input.extra;
 }
 
 getinlearn = () => {
-    alert('冲刺！');
+    learn.remove();
+    macro.appendChild(document.createElement('span').setAttribute('class','left'));
+    macro.appendChild(document.createElement('span').setAttribute('class','center'));
+    macro.appendChild(document.createElement('span').setAttribute('class','right'));
 }
 
 learn.onclick = getinlearn;
