@@ -25,10 +25,13 @@ getinlearn = () => {
     learn.remove();
     let newspan = document.createElement('span');
     newspan.setAttribute('class','left');
+    newspan.innerText = words.root[Math.random() * words.root.length | 0].name;
     macro.appendChild(newspan);
     newspan.setAttribute('class','center');
+    newspan.innerText = words.root[Math.random() * words.root.length | 0].name;
     macro.appendChild(newspan);
     newspan.setAttribute('class','right');
+    newspan.innerText = words.root[Math.random() * words.root.length | 0].name;
     macro.appendChild(newspan);
 }
 
