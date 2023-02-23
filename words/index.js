@@ -23,9 +23,13 @@ oprate = (input) => {
 
 getinlearn = () => {
     learn.remove();
-    macro.appendChild(document.createElement('span').setAttribute('class','left'));
-    macro.appendChild(document.createElement('span').setAttribute('class','center'));
-    macro.appendChild(document.createElement('span').setAttribute('class','right'));
+    let newspan = document.createElement('span');
+    newspan.setAttribute('class','left');
+    macro.appendChild(newspan);
+    newspan.setAttribute('class','center');
+    macro.appendChild(newspan);
+    newspan.setAttribute('class','right');
+    macro.appendChild(newspan);
 }
 
 learn.onclick = getinlearn;
