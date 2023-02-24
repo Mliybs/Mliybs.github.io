@@ -23,16 +23,18 @@ oprate = (input) => {
 
 getinlearn = () => {
     learn.remove();
-    let newspan = document.createElement('span');
-    newspan.setAttribute('class','left');
-    macro.appendChild(newspan);
-    macro.lastElementChild.innerText = words.root[Math.random() * words.root.length | 0].name;
-    newspan.setAttribute('class','center');
-    macro.appendChild(newspan);
-    macro.lastElementChild.innerText = words.root[Math.random() * words.root.length | 0].name;
-    newspan.setAttribute('class','right');
-    macro.appendChild(newspan);
-    macro.lastElementChild.innerText = words.root[Math.random() * words.root.length | 0].name;
+    let leftspan = document.createElement('span');
+    let middlespan = document.createElement('span');
+    let rightspan = document.createElement('span');
+    leftspan.setAttribute('class','left');
+    middlespan.setAttribute('class','center');
+    rightspan.setAttribute('class','right');
+    leftspan.innerText = words.root[Math.random() * words.root.length | 0].name;
+    middlespan.innerText = words.root[Math.random() * words.root.length | 0].name;
+    rightspan.innerText = words.root[Math.random() * words.root.length | 0].name;
+    macro.appendChild(leftspan);
+    macro.appendChild(middlespan);
+    macro.appendChild(rightspan);
 }
 
 learn.onclick = getinlearn;
